@@ -8,3 +8,9 @@ colorscheme blue
 
 " hide dot files in vim's directory listing
 let g:netrw_list_hide= '^\..*$'
+
+function AddTimestamp()
+  :0put =strftime('%c') . '  '
+  :normal $
+endfunction
+autocmd BufNewFile,BufRead * call AddTimestamp()
