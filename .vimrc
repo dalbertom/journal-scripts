@@ -2,6 +2,7 @@ set t_Co=256
 set nocompatible
 set hlsearch incsearch
 set backspace=indent,eol,start
+set spell
 
 syntax on
 colorscheme blue
