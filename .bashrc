@@ -1,4 +1,3 @@
-[ -d journal ] || git init journal
 export EDITOR=vi
 export HOME=$(cd $(dirname $0) && pwd)
 export HISTFILE=~/.bash_history
@@ -7,6 +6,7 @@ export HISTFILESIZE=9999
 export HISTTIMEFORMAT="%F %T "
 export HISTCONTROL=ignoredups:erasedups:ignorespace
 export HISTIGNORE="history*"
-cd journal
+[ -d ~/journal ] || git init ~/journal
+cd ~/journal
 clear
 exec bash -r -l
