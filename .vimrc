@@ -17,5 +17,5 @@ function AddTimestamp()
     :normal $
   endif
 endfunction
-autocmd BufNewFile,BufRead * call AddTimestamp()
+autocmd BufNewFile,BufRead * if @%[0] != '.' | call AddTimestamp() | endif
 autocmd Filetype gitcommit setlocal textwidth=72 colorcolumn=72
