@@ -11,7 +11,9 @@ colorscheme blue
 let g:netrw_list_hide= '^\..*$'
 
 function AddTimestamp()
-  :0put =strftime('%c') . '  '
-  :normal $
+  if &modifiable
+    :0put =strftime('%c') . '  '
+    :normal $
+  endif
 endfunction
 autocmd BufNewFile,BufRead * call AddTimestamp()
