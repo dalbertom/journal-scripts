@@ -18,3 +18,4 @@ function AddTimestamp()
   endif
 endfunction
 autocmd BufNewFile,BufRead * call AddTimestamp()
+autocmd Filetype gitcommit setlocal textwidth=72 colorcolumn=72
