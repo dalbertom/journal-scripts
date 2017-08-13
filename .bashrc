@@ -1,5 +1,5 @@
 export EDITOR=vi
-export HOME=$(cd $(dirname $0) && pwd)
+export HOME="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 export HISTFILE=~/.bash_history
 export HISTSIZE=9999
 export HISTFILESIZE=9999
