@@ -13,7 +13,7 @@ let g:netrw_list_hide= '^\..*$'
 
 function AddTimestamp()
   if &modifiable
-    :0put ='# ' . strftime('%c') . '  '
+    :0put ='# ' . strftime('%c') . ' '
     :normal $
   endif
 endfunction
