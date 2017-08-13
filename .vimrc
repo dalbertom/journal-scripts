@@ -10,6 +10,7 @@ colorscheme blue
 
 " hide dot files in vim's directory listing
 let g:netrw_list_hide= '^\..*$'
+let g:netrw_banner=0
 
 function AddTimestamp()
   if &modifiable
