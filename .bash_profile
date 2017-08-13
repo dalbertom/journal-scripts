@@ -1,3 +1,3 @@
-export PS1="\t journal> "
+export PS1="\t \W> "
 git notes append -m "opened $(date)" HEAD
 echo Journal opened
