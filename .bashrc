@@ -1,5 +1,5 @@
 export HISTFILE=.bash_history
 export EDITOR=vi
-export PS1="\t journal> "
 clear
-vim -u .vimrc .
+export HOME=$(cd $(dirname $0) && pwd)
+exec bash -r -l
